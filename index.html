@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./rightcontainer.css">
+    <link rel="stylesheet" href="./leftcontainer.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    
+    <!-- Left Container -->
+    <section class="left-container">
+        <div class="search">
+            <input type="search" placeholder="Search for places">
+            <button type="submit">Search</button>
+        </div>
+
+        <div class="weather">
+            <div class="weather-image">
+                <img src="./images/drizzle.png" class="weather-icon" alt="">
+            </div>
+            
+            <div class="display-data">
+                <h1 class="temp">22 <span>°C</span></h1>
+                <p class="feels">Feels Like 25 °C</p>
+                <h3 class="city">New York</h2>
+                <h3 class="days">Monday, <span>16:00 </span></h2>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Right Container -->
+    <section class="right-container">
+
+        <div class="header">
+            <h1>Forecast</h1>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h3 class="head-card">Sun</h3>
+                <div class="weather-image-card">
+                    <img src="./images/clear.png" class="weather-icon-card" alt="">
+                </div>
+                
+                <div class="display-data-card">
+                   <h3><span class="max">15°</span> | <span class="min">9°</span></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="head-card">Mon</h3>
+                <div class="weather-image-card">
+                    <img src="./images/clear.png" class="weather-icon-card" alt="">
+                </div>
+                
+                <div class="display-data-card">
+                   <h3><span class="max">12°</span> | <span class="min">7°</span></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="head-card">Tue</h3>
+                <div class="weather-image-card">
+                    <img src="./images/clear.png" class="weather-icon-card" alt="">
+                </div>
+                
+                <div class="display-data-card">
+                   <h3><span class="max">9°</span> | <span class="min">2°</span></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="head-card">Wed</h3>
+                <div class="weather-image-card">
+                    <img src="./images/clear.png" class="weather-icon-card" alt="">
+                </div>
+                
+                <div class="display-data-card">
+                   <h3><span class="max">8°</span> | <span class="min">-3°</span></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="head-card">Thu</h3>
+                <div class="weather-image-card">
+                    <img src="./images/clear.png" class="weather-icon-card" alt="">
+                </div>
+                
+                <div class="display-data-card">
+                   <h3><span class="max">5°</span> | <span class="min">-2°</span></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="head-card">Sun</h3>
+                <div class="weather-image-card">
+                    <img src="./images/clear.png" class="weather-icon-card" alt="">
+                </div>
+                
+                <div class="display-data-card">
+                   <h3><span class="max">15°</span> | <span class="min">9°</span></h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3 class="head-card">Sun</h3>
+                <div class="weather-image-card">
+                    <img src="./images/clear.png" class="weather-icon-card" alt="">
+                </div>
+                
+                <div class="display-data-card">
+                   <h3><span class="max">15°</span> | <span class="min">9°</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="lower-part">
+
+            <div class="lower-header">
+                <h2>Today's Highlights</h2>
+            </div>
+
+            <div class="lower-card-section">
+                <div class="lower-card">
+                    <h3 class="lower-head-card">UV Index</h3>
+                    <div class="display-data-card">
+                        <h3 class="display-data-card-data">5</h3>
+                    </div>
+                </div>
+                <div class="lower-card">
+                    <h3 class="lower-head-card">Wind Status</h3>
+                    <div class="lower-head-card-container">
+                        <div class="left-card">
+                            <img src="./images/windy-clipart-vector-8.png" alt="" class="wind-img">
+                        </div>
+                        <div class="right-card">
+                            <h3 class="display-data-card-data windSpeed">7.70 <span>km/h</span></h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="lower-card">
+                    <h3 class="lower-head-card-sun">Sunrise & Sunset</h3>
+                    <div class="lower-head-card-container">
+                        <div class="left-card">
+                            <img src="" alt="" class="sunrise-img">
+                            <img src="" alt="" class="sunset-img">
+                        </div>
+                        <div class="right-card sun">
+                            <h3 class="display-data-card-data sunrise">7.70 </h3>
+                            <h3 class="display-data-card-data sunset">7.70 </h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="lower-card">
+                    <h3 class="lower-head-card-humidity">Humidity Percentage</h3>
+                    <div class="lower-head-card-container">
+                        <div class="left-card">
+                            <img src="./images/humidity-vector-icon-png_276779-removebg-preview.png" alt="" class="humidity-img">
+                        </div>
+                        <div class="right-card">
+                            <h3 class="display-data-card-data humidity">50<span>%</span></h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="lower-card">
+                    <h3 class="lower-head-card">Air Pressure</h3>
+                    <div class="lower-head-card-container">
+                        <div class="left-card">
+                            <img src="./images/8723100-removebg-preview.png" alt="" class="pressure-img">
+                        </div>
+                        <div class="right-card">
+                            <h3 class="display-data-card-data pressure">50<span>ppm</span></h3>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="lower-card">
+                    <h3 class="lower-head-card">Visibility</h3>
+                    <div class="lower-head-card-container">
+                        <div class="left-card">
+                            <img src="./images/5263154 (1).png" alt="" class="pressure-img">
+                        </div>
+                        <div class="right-card">
+                            <h3 class="display-data-card-data visibility">50<span>km</span></h3>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
